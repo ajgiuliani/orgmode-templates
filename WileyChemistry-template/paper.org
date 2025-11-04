@@ -1,0 +1,233 @@
+#+Title: Manuscript Title Manuscript Title Manuscript Title Manuscript Title Manuscript Title Manuscript Title Manuscript Title
+#+LATEX_CLASS: wiley-chemistry
+#+LANG: en
+#+OPTIONS: toc:nil date:nil author:t H:4 num:2 Tex:t LaTex:t title:nil
+#+OPTIONS: tags:nil timestamp:t todo:nil stat:t num:nil
+#+OPTIONS: tex:t
+#+EXPORT_EXCLUDE_TAGS: noexport
+
+
+#+OPTIONS: biblatex:nil
+
+#+latex: \author{
+#+latex: \begin{minipage}{\textwidth}
+First Author,\textsuperscript{+ ,[a]} Second Author,\textsuperscript{+ ,[a]} Third Author,*\textsuperscript{[a]} Fourth Author,\textsuperscript{[b]} Fifth Author,*\textsuperscript{[b]} Sixth Author,\textsuperscript{[b]} Seventh Author,*\textsuperscript{[b]} Eighth Author*\textsuperscript{[b]}
+#+LaTeX: \end{minipage}
+#+LaTeX: }
+
+#+LaTeX: \newcommand{\affiliation}{
+#+LaTeX: \begin{itemize}
+
+#+LaTeX: %	Please delete lines not applicapble			    
+
+#+LaTeX: \item[{[a]}] F. Author, Dr. S. Author, Prof. Dr. T. Author*\\Institute and organisation address\\E-mail: corresponding.author@institute.uni
+
+#+LaTeX: \item[{[b]}] Dr. F. Author, Dr. F. Author*, S. Author, Dr. S. Author*, Prof. E. Author*\\Institute and organisation address\\E-mail: second\_corresponding.author@institute.uni\\third\_corresponding.author@institute.uni\\fourth\_corresponding.author@institute.uni
+
+#+LaTeX: \item[{[c]}] Please add further affiliations as new items.
+#+LaTeX: \item[{[\texttt{+}]}] These authors contributed equally.
+#+LaTeX: \end{itemize}
+#+LaTeX: }
+
+
+#+LaTeX: \renewcommand{\dedication}{
+#+LaTeX: \begin{minipage}{\textwidth}
+Dedication (optional, leave blank if no dedication is required)
+#+LaTeX: \end{minipage}
+#+LaTeX: }
+
+#+LaTeX: \renewcommand{\abstract}{
+Insert abstract text here. Abstracts should be 800-1000 characters in length including spaces. Please ensure your abstract is written so that it can be read in isolation (i.e., in an abstracting service such as PubMed), with all abbreviations defined.
+#+LaTeX: }
+
+#+LaTeX: \newcommand{\keywords}{
+	Keyword 1 \textbullet{}
+	Keyword 2 \textbullet{}
+	Keyword 3 \textbullet{}
+	Keyword 4 \textbullet{}
+	Keyword 5
+#+LaTeX: }
+
+#+LaTeX: \twocolumn[\vspace{-1.5cm}\maketitle\vspace{-1cm}
+#+LaTeX: \textit{\dedication}\vspace{0.4cm}]
+#+LaTeX: \small{\begin{shaded}
+#+LaTeX: \noindent\abstract
+#+LaTeX: \end{shaded}
+#+LaTeX: }
+
+#+LaTeX: \begin{figure} [!b]
+#+LaTeX: \rule{\columnwidth}{1pt}
+#+LaTeX: \footnotesize{\textsf{\affiliation}}
+#+LaTeX: \end{figure}
+
+
+* Introduction
+Information on our Journals can be found on the websites of [[https://chemistry-europe.onlinelibrary.wiley.com/][/Chemistry Europe/]] and [[http://www.angewandte.org][/Angewandte Chemie/]]. Detailed information for publishing with us can be found in our Notice to the Authors (for /Chemistry Europe/ Journals, [[https://chemistry-europe.onlinelibrary.wiley.com/hub/journal/15213765/notice-to-authors][click here]] for /Angewandte Chemie/, [[https://onlinelibrary.wiley.com/page/journal/15213773/homepage/notice-to-authors][click here]]
+
+Are you interested in tips to write better scientific papers? You can find our free guide to writing [[https://chemistry-europe.onlinelibrary.wiley.com/hub/writing-tips-how-to-get-published][here]].
+
+For submitting your \LaTeX manuscript, please follow the instructions and examples provided below and in the additional files provided in this package.
+
+For citations, please provide your library used as =Bib=\TeX file (.bib) and use the Wiley-chemistry.bst citation style (please also check the example references at the end of this file and further information on CCDC deposition numbers in the [[*Experimental][Experimental]].\cite{article1,article2,book,article3,WEB,bookvolume}
+
+
+* Results and Discussion
+Figures, Schemes and Tables can be inserted in one- (Figure [[fig1]], Scheme [[sch1]], Table [[tab1]], max. width 8.6 cm) or two-column (Figure [[fig2]], Scheme [[sch2]], Table [[tab2]], max. width 17.4 cm) format. For one-column format, please use:
+#+begin_example
+#+ATTR_LATEX: :width 8.6cm :float figure
+#+ATTR_LATEX: :width 8.6cm :float scheme
+#+ATTR_LATEX: :align lcc   :float table
+#+end_example
+
+For two-column format, please use
+#+begin_example
+#+ATTR_LATEX: :width 8.6cm :float figure*
+#+ATTR_LATEX: :width 8.6cm :float scheme*
+#+ATTR_LATEX: :align lcc   :float table*
+#+end_example
+
+Examples are given below.\\
+
+Equations should be numbered and referenced [Eqs. [[eq:eq1]] and [[eq:eq2]] ] in the text. Please see the following examples:
+\\
+#+NAME: eq:eq1
+\begin{equation}
+      \ce{2 H2O -> O2 + 2 H2}\enspace \Delta E^0 = 1.23 \text{V}
+\end{equation}
+
+#+NAME: eq:eq2
+\begin{equation}
+E=E^0+\frac{RT}{z_eF}\ln{\frac{a_{\text{Ox}}}{a_{\text{Red}}}}
+\end{equation}
+\\
+\\
+If you would like to refer to a section or subsection please use the section name, not any numbers. Section numbers are removed by our typesetters. Please use
+#+begin_example
+[[label_name]]
+#+end_example
+to define the label name for the section or subsection you would like to refer to, and 
+#+begin_example
+[[label_name]]
+#+end_example
+for the reference. The name of the section or subsection will then appear in you PDF document as clickable linke, as shown in the following examples: [[*Experimental][Expeirmental]] and [[*Experimental for Angewandte Chemie][Experimental for Angewandte Chemie]]
+
+
+#+CAPTION: Caption for a one-column figure.  Please provide copyright permission information in the Figure and Scheme caption for any images that are from another source than your own work and add a copyright statement where applicable, for example: Reproduced with permission. \cite{article2} Copyright "Year", "Publisher". 
+#+NAME: fig1
+#+ATTR_LATEX: :width 8.6cm
+[[file:fig_one_column.png]]
+
+#+CAPTION: Caption for a two-column figure. 
+#+NAME: fig2
+#+ATTR_LATEX: :width 17.4cm :float figure*
+[[file:fig_two_column.png]]
+
+#+CAPTION: Caption for a one-column scheme. 
+#+NAME: sch1
+#+ATTR_LATEX: :width 8.6cm :float scheme
+[[file:sch_one_column.png]]
+
+#+CAPTION: Caption for a two-column scheme. 
+#+NAME: sch2
+#+ATTR_LATEX: :width 17.4cm :float scheme*
+[[file:sch_two_column.png]]
+
+
+#+NAME: tab1
+#+CAPTION: Caption for a one-column table.
+#+ATTR_LATEX: :align lcc 
+|----------------------------------+---------------+-----------------------------------------|
+| Head 1\footnote{Table footnote}  | Head 2 [Unit] | Head 3\footnote{Table footnote}  [Unit] |
+|----------------------------------+---------------+-----------------------------------------|
+| Entry 1                          | Value 1       | Value 2                                 |
+| Entry 2                          | Value 1       | Value2                                  |
+| Entry 3\footnote{Table footnote} | Value 1       | Value 2                                 |
+| Entry 4                          | Value 1       | Value 2                                 |
+|----------------------------------+---------------+-----------------------------------------|
+
+ 
+#+NAME: tab2
+#+CAPTION: Caption for a two-column table.
+#+ATTR_LATEX: :float table* :align lccccc
+|------------------------------------+------------------------------------+------------------------------------+---------------+---------------+---------------|
+| Head 1^{[a]}                          | Head 2 [Unit]                      | Head 3^{[b] [Unit]}                   | Head 4 [Unit] | Head 5 [Unit] | Head 6 [Unit] |
+|------------------------------------+------------------------------------+------------------------------------+---------------+---------------+---------------|
+| Entry 1                            | Value 1                            | Value 2                            | Value 3       | Value 4       | Value 5       |
+| Entry 2                            | Value 1                            | Value 2                            | Value 3       | Value 4       | Value 5       |
+| Entry 3^{[c]}                         | Value 1                            | Value 2                            | Value 3       | Value 4       | Value 5       |
+| Entry 4                            | Value 1                            | Value 2                            | Value 3       | Value 4       | Value 5       |
+|------------------------------------+------------------------------------+------------------------------------+---------------+---------------+---------------|
+| \footnotesize{[a] Table footnote}. | \footnotesize{[b] Table footnote}. | \footnotesize{[c] Table footnote}. |               |               |               |
+
+* Conclusion
+Conclusion text.
+
+* Experimental
+Experimental details.\\
+
+If your work contains any new crystal structures, please ensure they have been deposited with a database (such as the joint Cambridge Crystallographic Data Centre and Fachinformationszentrum Karlsruhe Access Structures service). These CCDC depository numbers have to be provided together as one of the references in the reference section of the main manuscript. Please mention each deposition number, not a range, in the one reference to ensure that all numbers are linked from the manuscript to the database.\cite{CCDC}
+
+
+** Experimental for Angewandte Chemie
+For /Angewandte Chemie/, please move all experimental details into the Supporting Information.
+
+
+\clearpage
+
+* Acknowledgment
+
+Acknowledgements text.
+
+* Conflict of Interest
+Please enter any conflict of interest to declare.
+
+
+#+LaTeX: \begin{shaded}
+#+LaTeX: \noindent\textsf{\textbf{Keywords:} \keywords} 
+#+LaTeX: \end{shaded}
+
+\setlength{\bibsep}{0.0cm}
+\bibliographystyle{wiley-chemistry.bst}
+\bibliography{references.bib}
+
+
+
+\clearpage
+
+* Entry for the Table of Contents
+
+please select one option only and delete the other one
+
+
+Option 1:    
+
+#+begin_src latex
+\noindent\rule{11cm}{2pt}
+\begin{minipage}{5.5cm}
+\includegraphics[width=5.5cm]{TOC_opt1.png} 
+\end{minipage}
+%\hspace{0.5cm}
+\begin{minipage}{5.5cm}
+\large\textsf{Authors should provide a short Table of Contents graphical abstract and accompanying text (up to 450 characters including spaces). The graphical abstract should stimulate curiosity. Repetition or paraphrasing of the title and experimental details should be avoided.}
+\end{minipage}
+\noindent\rule{11cm}{2pt}
+\vspace{2cm}
+#+end_src
+
+
+ Option 2:
+
+#+begin_src latex
+\noindent\rule{11cm}{2pt}
+\begin{minipage}{11cm}
+\includegraphics[width=11cm]{TOC_opt2.png}
+\end{minipage}
+\begin{minipage}{11cm}
+\large\textsf{Authors should provide a short Table of Contents graphical abstract and accompanying text (up to 450 characters including spaces). The graphical abstract should stimulate curiosity. Repetition or paraphrasing of the title and experimental details should be avoided.}
+\end{minipage}
+\noindent\rule{11cm}{2pt}
+#+end_src
+
+
+
+

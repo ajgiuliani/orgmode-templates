@@ -1,0 +1,248 @@
+% Created 2025-11-04 mar. 23:38
+% Intended LaTeX compiler: pdflatex
+\documentclass{WileyChemistry-template}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Alexandre Giuliani}
+\date{}
+\title{Manuscript Title Manuscript Title Manuscript Title Manuscript Title Manuscript Title Manuscript Title Manuscript Title}
+\hypersetup{
+ pdfauthor={Alexandre Giuliani},
+ pdftitle={Manuscript Title Manuscript Title Manuscript Title Manuscript Title Manuscript Title Manuscript Title Manuscript Title},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 30.1 (Org mode 9.7.11)}, 
+ pdflang={English}}
+\begin{document}
+
+\author{
+\begin{minipage}{\textwidth}
+First Author,\textsuperscript{+ ,[a]} Second Author,\textsuperscript{+ ,[a]} Third Author,*\textsuperscript{[a]} Fourth Author,\textsuperscript{[b]} Fifth Author,*\textsuperscript{[b]} Sixth Author,\textsuperscript{[b]} Seventh Author,*\textsuperscript{[b]} Eighth Author*\textsuperscript{[b]}
+\end{minipage}
+}
+
+\newcommand{\affiliation}{
+\begin{itemize}
+
+%	Please delete lines not applicapble
+
+\item[{[a]}] F. Author, Dr. S. Author, Prof. Dr. T. Author*\\Institute and organisation address\\E-mail: corresponding.author@institute.uni
+
+\item[{[b]}] Dr. F. Author, Dr. F. Author*, S. Author, Dr. S. Author*, Prof. E. Author*\\Institute and organisation address\\E-mail: second\_corresponding.author@institute.uni\\third\_corresponding.author@institute.uni\\fourth\_corresponding.author@institute.uni
+
+\item[{[c]}] Please add further affiliations as new items.
+\item[{[\texttt{+}]}] These authors contributed equally.
+\end{itemize}
+}
+
+
+\renewcommand{\dedication}{
+\begin{minipage}{\textwidth}
+Dedication (optional, leave blank if no dedication is required)
+\end{minipage}
+}
+
+\renewcommand{\abstract}{
+Insert abstract text here. Abstracts should be 800-1000 characters in length including spaces. Please ensure your abstract is written so that it can be read in isolation (i.e., in an abstracting service such as PubMed), with all abbreviations defined.
+}
+
+\newcommand{\keywords}{
+Keyword 1 \textbullet{}
+Keyword 2 \textbullet{}
+Keyword 3 \textbullet{}
+Keyword 4 \textbullet{}
+Keyword 5
+}
+
+\twocolumn[\vspace{-1.5cm}\maketitle\vspace{-1cm}
+\textit{\dedication}\vspace{0.4cm}]
+\small{\begin{shaded}
+\noindent\abstract
+\end{shaded}
+}
+
+\begin{figure} [!b]
+\rule{\columnwidth}{1pt}
+\footnotesize{\textsf{\affiliation}}
+\end{figure}
+\section*{Introduction}
+\label{sec:org48d8cbd}
+Information on our Journals can be found on the websites of \href{https://chemistry-europe.onlinelibrary.wiley.com/}{\emph{Chemistry Europe}} and \href{http://www.angewandte.org}{\emph{Angewandte Chemie}}. Detailed information for publishing with us can be found in our Notice to the Authors (for \emph{Chemistry Europe} Journals, \href{https://chemistry-europe.onlinelibrary.wiley.com/hub/journal/15213765/notice-to-authors}{click here} for \emph{Angewandte Chemie}, \href{https://onlinelibrary.wiley.com/page/journal/15213773/homepage/notice-to-authors}{click here}
+
+Are you interested in tips to write better scientific papers? You can find our free guide to writing \href{https://chemistry-europe.onlinelibrary.wiley.com/hub/writing-tips-how-to-get-published}{here}.
+
+For submitting your \LaTeX manuscript, please follow the instructions and examples provided below and in the additional files provided in this package.
+
+For citations, please provide your library used as \texttt{Bib}\TeX file (.bib) and use the Wiley-chemistry.bst citation style (please also check the example references at the end of this file and further information on CCDC deposition numbers in the \hyperref[sec:org16fcaa4]{Experimental}.\cite{article1,article2,book,article3,WEB,bookvolume}
+\section*{Results and Discussion}
+\label{sec:org685e3d0}
+Figures, Schemes and Tables can be inserted in one- (Figure \ref{fig1}, Scheme \ref{sch1}, Table \ref{tab1}, max. width 8.6 cm) or two-column (Figure \ref{fig2}, Scheme \ref{sch2}, Table \ref{tab2}, max. width 17.4 cm) format. For one-column format, please use:
+\begin{verbatim}
+#+ATTR_LATEX: :width 8.6cm :float figure
+#+ATTR_LATEX: :width 8.6cm :float scheme
+#+ATTR_LATEX: :align lcc   :float table
+\end{verbatim}
+
+For two-column format, please use
+\begin{verbatim}
+#+ATTR_LATEX: :width 8.6cm :float figure*
+#+ATTR_LATEX: :width 8.6cm :float scheme*
+#+ATTR_LATEX: :align lcc   :float table*
+\end{verbatim}
+
+Examples are given below.\\
+
+Equations should be numbered and referenced [Eqs. \ref{eq:eq1} and \ref{eq:eq2} ] in the text. Please see the following examples:
+
+\begin{equation}
+\label{eq:eq1}
+      \ce{2 H2O -> O2 + 2 H2}\enspace \Delta E^0 = 1.23 \text{V}
+\end{equation}
+
+\begin{equation}
+\label{eq:eq2}
+E=E^0+\frac{RT}{z_eF}\ln{\frac{a_{\text{Ox}}}{a_{\text{Red}}}}
+\end{equation}
+
+
+If you would like to refer to a section or subsection please use the section name, not any numbers. Section numbers are removed by our typesetters. Please use
+\begin{verbatim}
+[[label_name]]
+\end{verbatim}
+to define the label name for the section or subsection you would like to refer to, and 
+\begin{verbatim}
+[[label_name]]
+\end{verbatim}
+for the reference. The name of the section or subsection will then appear in you PDF document as clickable linke, as shown in the following examples: \hyperref[sec:org16fcaa4]{Expeirmental} and \hyperref[sec:org23b655c]{Experimental for Angewandte Chemie}
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=8.6cm]{fig_one_column.png}
+\caption{\label{fig1}Caption for a one-column figure.  Please provide copyright permission information in the Figure and Scheme caption for any images that are from another source than your own work and add a copyright statement where applicable, for example: Reproduced with permission. \cite{article2} Copyright "Year", "Publisher".}
+\end{figure}
+
+\begin{figure*}
+\centering
+\includegraphics[width=17.4cm]{fig_two_column.png}
+\caption{\label{fig2}Caption for a two-column figure.}
+\end{figure*}
+
+\begin{scheme}
+\centering
+\includegraphics[width=8.6cm]{sch_one_column.png}
+\caption{\label{sch1}Caption for a one-column scheme.}
+\end{scheme}
+
+\begin{scheme*}
+\centering
+\includegraphics[width=17.4cm]{sch_two_column.png}
+\caption{\label{sch2}Caption for a two-column scheme.}
+\end{scheme*}
+
+
+\begin{table}[htbp]
+\caption{\label{tab1}Caption for a one-column table.}
+\centering
+\begin{tabular}{lcc}
+\hline
+Head 1\footnote{Table footnote} & Head 2 [Unit] & Head 3\footnote{Table footnote}  {[}Unit]\\
+\hline
+Entry 1 & Value 1 & Value 2\\
+Entry 2 & Value 1 & Value2\\
+Entry 3\footnote{Table footnote} & Value 1 & Value 2\\
+Entry 4 & Value 1 & Value 2\\
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{table*}[htbp]
+\caption{\label{tab2}Caption for a two-column table.}
+\centering
+\begin{tabular}{lccccc}
+\hline
+Head 1\textsuperscript{{[}a]} & Head 2 [Unit] & Head 3\textsuperscript{{[}b] [Unit]} & Head 4 [Unit] & Head 5 [Unit] & Head 6 [Unit]\\
+\hline
+Entry 1 & Value 1 & Value 2 & Value 3 & Value 4 & Value 5\\
+Entry 2 & Value 1 & Value 2 & Value 3 & Value 4 & Value 5\\
+Entry 3\textsuperscript{{[}c]} & Value 1 & Value 2 & Value 3 & Value 4 & Value 5\\
+Entry 4 & Value 1 & Value 2 & Value 3 & Value 4 & Value 5\\
+\hline
+\footnotesize{[a] Table footnote}. & \footnotesize{[b] Table footnote}. & \footnotesize{[c] Table footnote}. &  &  & \\
+\end{tabular}
+\end{table*}
+\section*{Conclusion}
+\label{sec:orgda03221}
+Conclusion text.
+\section*{Experimental}
+\label{sec:org16fcaa4}
+Experimental details.\\
+
+If your work contains any new crystal structures, please ensure they have been deposited with a database (such as the joint Cambridge Crystallographic Data Centre and Fachinformationszentrum Karlsruhe Access Structures service). These CCDC depository numbers have to be provided together as one of the references in the reference section of the main manuscript. Please mention each deposition number, not a range, in the one reference to ensure that all numbers are linked from the manuscript to the database.\cite{CCDC}
+\subsection*{Experimental for Angewandte Chemie}
+\label{sec:org23b655c}
+For \emph{Angewandte Chemie}, please move all experimental details into the Supporting Information.
+
+
+\clearpage
+\section*{Acknowledgment}
+\label{sec:orgad8950b}
+
+Acknowledgements text.
+\section*{Conflict of Interest}
+\label{sec:org5a08f07}
+Please enter any conflict of interest to declare.
+
+
+\begin{shaded}
+\noindent\textsf{\textbf{Keywords:} \keywords}
+\end{shaded}
+
+\setlength{\bibsep}{0.0cm}
+\bibliographystyle{wiley-chemistry.bst}
+\bibliography{references.bib}
+
+
+
+\clearpage
+\section*{Entry for the Table of Contents}
+\label{sec:org49d3bba}
+
+please select one option only and delete the other one
+
+
+Option 1:    
+
+\noindent\rule{11cm}{2pt}
+\begin{minipage}{5.5cm}
+\includegraphics[width=5.5cm]{TOC_opt1.png} 
+\end{minipage}
+%\hspace{0.5cm}
+\begin{minipage}{5.5cm}
+\large\textsf{Authors should provide a short Table of Contents graphical abstract and accompanying text (up to 450 characters including spaces). The graphical abstract should stimulate curiosity. Repetition or paraphrasing of the title and experimental details should be avoided.}
+\end{minipage}
+\noindent\rule{11cm}{2pt}
+\vspace{2cm}
+
+
+Option 2:
+
+\noindent\rule{11cm}{2pt}
+\begin{minipage}{11cm}
+\includegraphics[width=11cm]{TOC_opt2.png}
+\end{minipage}
+\begin{minipage}{11cm}
+\large\textsf{Authors should provide a short Table of Contents graphical abstract and accompanying text (up to 450 characters including spaces). The graphical abstract should stimulate curiosity. Repetition or paraphrasing of the title and experimental details should be avoided.}
+\end{minipage}
+\noindent\rule{11cm}{2pt}
+\end{document}

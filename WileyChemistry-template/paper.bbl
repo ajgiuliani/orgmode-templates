@@ -1,0 +1,37 @@
+\begin{thebibliography}{1}
+
+\bibitem{article1}
+F.~Author, S.~Author, C.~Author, \emph{ChemSusChem} \textbf{2008}, \emph{1}, 9.
+
+\bibitem{article2}
+F.~Author, S.~Author, T.~Author, C.~Author, \emph{Angew. Chem. Int. Ed.}
+  \textbf{2006}, \emph{45}, 10.
+
+\bibitem{book}
+J.~W. Grate, G.~C. Frye, \emph{Sensors Update}, Wiley-VCH, Weinheim
+  \textbf{1996}.
+
+\bibitem{article3}
+F.~Author, S.~Author, T.~Author, C.~Author, \emph{Chem. - Eur. J.}
+  \textbf{2022}, \emph{28}, e202200003.
+
+\bibitem{WEB}
+S.~Novick, Biography of Rotational Spectra for Weakly Bound Complexes, can be
+  found under http://www.wesleyan.edu/chem/faculty/novick/vdw.html
+  \textbf{2005}.
+
+\bibitem{bookvolume}
+W.~Koch, M.~C. Holthausen, \emph{A Chemist's Guide to Density Functional
+  Theory, Vol. 1}, (Eds.: W. E. Willen, R. J. Larsen), Academic Press, Weinheim
+  \textbf{2000}.
+
+\bibitem{CCDC}
+Deposition Number(s) XXXXXX (for \textbf{1}), XXXXXX (for \textbf{2}), XXXXXX
+  (for \textbf{3}), XXXXXX (for \textbf{4}), XXXXXX (for \textbf{5}), XXXXXX
+  (for \textbf{6}), and XXXXXX (for \textbf{7}) contain(s) the supplementary
+  crystallographic data for this paper. These data are provided free of charge
+  by the joint Cambridge Crystallographic Data Centre and
+  Fachinformationszentrum Karlsruhe Access Structures service
+  www.ccdc.cam.ac.uk/structures.
+
+\end{thebibliography}
