@@ -7,3 +7,20 @@ The [[https://github.com/ajgiuliani/orgmode-templates/blob/main/WileyChemistry-t
 The \Latex templates may be downloaded from here: https://onlinelibrary.wiley.com/page/journal/15213773/homepage/authors
 The `.eps` Wiley-VCH logo had to be exported to pdf to be inserted in the templates.
 
+The following Emacs settings are used for this template.
+#+begin_src elisp
+  (add-to-list ' org-latex-classes
+  	       '("wiley-chemistry"
+                   "\\documentclass{WileyChemistry-template}"
+                  ("\\section{%s}" . "\\section*{%s}")
+                  ("\\subsection{%s}" . "\\subsection*{%s}")
+                  ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+                  ("\\paragraph{%s}" . "\\paragraph*{%s}")
+                  ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+  (setq org-latex-pdf-process
+  	'("pdflatex -interaction nonstopmode %f"
+          "bibtex %b"
+          "pdflatex -interaction nonstopmode %f"
+          "pdflatex -interaction nonstopmode %f"))
+  
+#+end_src
