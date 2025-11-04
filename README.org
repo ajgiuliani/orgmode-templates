@@ -1,10 +1,10 @@
-#+Title: Orgmode templates for \Latex PDF export
+#+Title: Orgmode templates for Latex PDF export
 
-This repository contains =Orgmode= article templates to be exported in \latex - PDF. The templates try to follow as much as possible the \Latex templates provided by the publishers.
+This repository contains =Orgmode= article templates to be exported in latex - PDF. The templates try to follow as much as possible the Latex templates provided by the publishers.
 These templates can be used to write scientific articles in =Orgmode= and then export documents ready for submissions.
 * Wiley-Chemistry template
 The [[https://github.com/ajgiuliani/orgmode-templates/blob/main/WileyChemistry-template/paper.org][paper.org]] is the =orgmode= template.
-The \Latex templates may be downloaded from here: https://onlinelibrary.wiley.com/page/journal/15213773/homepage/authors
+The Latex templates may be downloaded from here: https://onlinelibrary.wiley.com/page/journal/15213773/homepage/authors
 The `.eps` Wiley-VCH logo had to be exported to pdf to be inserted in the templates.
 
 The following Emacs settings are used for this template.
