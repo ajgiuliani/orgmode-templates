@@ -68,8 +68,7 @@ Are you interested in tips to write better scientific papers? You can find our f
 
 For submitting your \LaTeX manuscript, please follow the instructions and examples provided below and in the additional files provided in this package.
 
-For citations, please provide your library used as =Bib=\TeX file (.bib) and use the Wiley-chemistry.bst citation style (please also check the example references at the end of this file and further information on CCDC deposition numbers in the [[*Experimental][Experimental]].\cite{article1,article2,book,article3,WEB,bookvolume}
-
+For citations, please provide your library used as $\textsc{Bib}$ \TeX file (.bib) and use the Wiley-chemistry.bst citation style (please also check the example references at the end of this file and further information on CCDC deposition numbers in the [[*Experimental][Experimental]].\cite{article1,article2,book,article3,WEB,bookvolume}
 
 * Results and Discussion
 Figures, Schemes and Tables can be inserted in one- (Figure [[fig1]], Scheme [[sch1]], Table [[tab1]], max. width 8.6 cm) or two-column (Figure [[fig2]], Scheme [[sch2]], Table [[tab2]], max. width 17.4 cm) format. For one-column format, please use:
