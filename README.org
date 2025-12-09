@@ -24,3 +24,30 @@ The following Emacs settings are used for this template.
           "pdflatex -interaction nonstopmode %f"))
   
 #+end_src
+* ACS template
+The =orgmode= paper template for ACS article is given in the [[https://github.com/ajgiuliani/orgmode-templates/blob/main/ACS-template/paper.org][paper.org]]. I relies on the Latex ACS template available here: https://pubs.acs.org/page/4authors/submission/tex.html.
+I couldn't manage to get the proper reference formatting with the achemso package and used a workaround to produce superscript references without brackets. The following settings are used for this template.
+#+begin_src elisp
+     (add-to-list ' org-latex-classes
+              '("ACS-article"
+                "\\documentclass[letterpaper]{article}
+                 \\usepackage{geometry}
+                 \\geometry{margin = 1in}
+                 \\usepackage{setspace}
+                 \\usepackage{float}
+                 \\newfloat{scheme}{htbp}{los}
+                 \\floatname{scheme}{Scheme}
+                 \\floatname{chart}{Chart}
+                 \\newfloat{graph}{htbp}{loh}
+                 \\usepackage[version = 4]{mhchem}
+                 \\setcounter{secnumdepth}{-1}
+                 \\usepackage{authblk}"
+                ("\\section{%s}" . "\\section*{%s}")
+                ("\\subsection{%s}" . "\\subsection*{%s}")
+                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+                ("\\paragraph{%s}" . "\\paragraph*{%s}")
+                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+
+#+end_src
+The =org-latex-pdf-process= settings have been placed in the template paper as =elisp= code block.
+The pdf file produced [[https://github.com/ajgiuliani/orgmode-templates/blob/main/ACS-template/paper.pdf][paper.pdf]] is almost identical as the one available from the ACS website.
