@@ -1,6 +1,7 @@
-% Created 2025-12-09 mar. 15:11
+% Created 2025-12-09 mar. 23:24
 % Intended LaTeX compiler: pdflatex
-\documentclass[letterpaper]{article}
+\documentclass[letter]{article}
+\usepackage{achemso}
 \usepackage{geometry}
 \geometry{margin = 1in}
 \usepackage{setspace}
@@ -23,12 +24,8 @@
 \usepackage{amssymb}
 \usepackage{capt-of}
 \usepackage{hyperref}
-\usepackage[backend=biber,citestyle=numeric-comp,bibstyle=chem-acs,sorting=none]{biblatex}
+\usepackage[backend=biber,style=chem-acs]{biblatex}
 \addbibresource{references.bib}
-\renewcommand*{\mkbibbrackets}[1]{#1}
-\renewcommand*{\mkbibsuperscript}[1]{\textsuperscript{#1}}
-\DeclareFieldFormat{labelnumber}{\textsuperscript{#1}}
-\DeclareFieldFormat{labelnumberwidth}{\textsuperscript{#1}}
 \date{}
 \title{acs-orgmode-template}
 \hypersetup{
@@ -40,6 +37,8 @@
  pdflang={English}}
 \begin{document}
 
+\doublespacing
+
 \author[1]{Andrew N. Other}
 \author[1]{Fred T. Secondauthor}
 \author[1]{I. Ken Groupleader*}
@@ -48,7 +47,8 @@
 \affil[2]{Lead Discovery, BigPharma, Big Town, USA}
 \author[1]{Kay T. Finally}
 
-\title{A ``template'' model document for submission to the American Chemical Society (ACS)}
+\title{\textbf{A ``template'' model document for submission to the American Chemical Society (ACS)}}
+
 % Use the \date command for email address(s) of corresponding authors
 \date{*Email: i.k.groupleader@unknown.uu}
 
@@ -62,69 +62,76 @@
   reproduce the appearance of a published paper.
 \end{abstract}
 \section*{Keywords}
-\label{sec:orgba9f705}
+\label{sec:org0177aea}
 Some journals require keywords: these normally should be given immediately
 after the abstract.
 \section*{Abbreviations}
-\label{sec:orgb032272}
+\label{sec:org961d0a2}
 Some journals require a list of abbreviations: these normally should be given
 immediately after the keyswords (if required).
 \section*{Introduction}
-\label{sec:orgdaf62d0}
+\label{sec:org4354553}
 This is a paragraph of text to fill the introduction of the demonstration file.
 \section*{Results and Discussion}
-\label{sec:orgfc13ad3}
+\label{sec:org9a36834}
 \subsection*{Outline}
-\label{sec:orgc834148}
+\label{sec:org84a4911}
 The document layout should follow the style of the journal concerned. Where
 appropriate, sections and subsections should be added in the normal way.
 \subsection*{References}
-\label{sec:org562c90c}
+\label{sec:org951381f}
 References should be given in the normal way in \LaTeX{}. If you are using
 \textsf{biblatex} (as recommended) then you can use the full range of citation
-commands it provides. If you choose to use classical Bib\TeX{}, the
-\textsf{natbib} package will be loaded and you can use it's commands.\cite{article1,article2,book,article3,WEB,bookvolume}.
+commands it provides. If you choose to use classical Bib\TeX{},\autocite{article1,article2,WEB,bookvolume,CCDC} the
+\textsf{natbib} package will be loaded and you can use it's commands \autocite{book,article3}.
 \subsection*{Floats}
-\label{sec:orgd4f56a2}
+\label{sec:org8fc4a01}
 New float types are set up in the preamble. The means graphics are included as
-follows (Scheme \ref{sch:example}). As illustrated, the float is ``here'' if
+follows (Scheme \ref{sch:example} or \ref{sch:example}). As illustrated, the float is ``here'' if
 possible.
 
-Your scheme graphic would go here: PDF graphics are recommended. 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=8.6cm]{sch.pdf}
+\begin{scheme}
+  \begin{center}
+
+  Your scheme graphic would go here: \texttt{.eps} format\\
+  for \LaTeX\, or \texttt{.pdf} (or \texttt{.png}) for pdf\LaTeX\\
+  \textsc{ChemDraw} files are best saved as \texttt{.eps} files:\\
+  these can be scaled without loss of quality, and can be\\
+  converted to \texttt{.pdf} files easily using \texttt{eps2pdf}.\\
+  
+  %\includegraphics{graphic}
+
+  \end{center}
 \caption{\label{sch:example}An example scheme}
-\end{figure}
+\end{scheme}
 
 
-A standard figure environment
+A standard figure environment: Fig. \ref{fig-example}.
+
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=8.6cm]{fig.pdf}
 \caption{\label{fig-example}Caption}
 \end{figure}
 
-The use of the different floating environments is not required, but it is
-intended to make document preparation easier for authors. In general, you
-should place your graphics where they make logical sense; the production
-process will move them if needed.
+The use of the different floating environments is not required, but it is intended to make document preparation easier for authors. In general, you should place your graphics where they make logical sense; the production process will move them if needed.
 \subsection*{Math}
-\label{sec:org5c5adfb}
+\label{sec:org1276149}
 If packages such as \textsf{amsmath} are required, they should be loaded in the
 preamble. However, the basic \LaTeX math(s) input should work correctly
 without this. Some inline material \(1 + 1 = 2\) followed by some display. \[ A =
 \pi r^2 \]
 
-It is possible to label equations in the usual way (Eq. \ref{eqn:example}).
+It is possible to label equations in the usual way (Eq. \ref{eqn:example} or Eq. \ref{eqn:example}). Note that if using a code block, then the \texttt{\textbackslash{}label\{\}} is mandatory for the reference to work.
 
 \begin{equation}
-\label{eqn:example}
   \frac{\mathrm{d}}{\mathrm{d}x} \, r^2 = 2r
+  \label{eqn:example}
 \end{equation}
+
 This can also be used to have equations containing graphical content. To align
-the equation number with the middle of the graphic, rather than the bottom, a
-minipage may be used.
+  the equation number with the middle of the graphic, rather than the bottom, a
+  minipage may be used, such as in equation \ref{eqn:graphic}.
 
 \begin{equation}
 \label{eqn:graphic}
@@ -136,9 +143,9 @@ minipage may be used.
    \end{minipage}
 \end{equation}
 \section*{Experimental}
-\label{sec:orgf302156}
+\label{sec:orgcef51ef}
 The usual experimental details should appear here. This could include a table,
-which can be referenced as Table \ref{tbl:example}. Notice that the caption is
+which can be referenced as Table \ref{tbl:example} or \ref{tbl:example}. Notice that the caption is
 positioned at the top of the table.
 
 \begin{table}[htbp]
@@ -157,7 +164,7 @@ Entry seven & Entry eight\\
 
 Adding notes to tables can be complicated. Perhaps the easiest method is to
 generate these using the basic \texttt{\textbackslash textsuperscript} and
-\texttt{\textbackslash emph} macros, as illustrated (Table \ref{tbl:notes}).
+\texttt{\textbackslash emph} macros, as illustrated (Table \ref{tbl:notes} or \ref{tbl:notes}).
 
 \begin{table}[htbp]
 \caption{\label{tbl:notes}A table with notes.}
@@ -166,29 +173,24 @@ generate these using the basic \texttt{\textbackslash textsuperscript} and
 \hline
 Header one & Header two\\
 Entry one\textsuperscript{\textbf{{[}a]}} & Entry two\\
-Entry three\textsuperscript{\textbf{{[}b]}}\textsuperscript{nil} & Entry four\\
+Entry three\textsuperscript{\textbf{{[}b]}} & Entry four\\
 \hline
-\footnotesize{[a] Some text;}  \footnotesize{[b] Some more text}. & \\
+\footnotesize{[a] Some text};  \footnotesize{[b] Some more text}. & \\
 \end{tabular}
 \end{table}
 
 
-The example file also loads the optional \textsf{chemformula} and
-\textsf{mhchem} packages, so that formulas are easy to input:
-\textbackslash ce\{H2SO4\} gives \ce{H2SO4}. The two have similar
-syntax but authors may prefer one or the other.
+The example file also loads the optional \textsf{chemformula} and \texttt{mhchem} packages, so that formulas are easy to input \texttt{\textbackslash{}ce\{H2SO4\}} gives \ce{H2SO4}. The two have similar syntax but authors may prefer one or the other.
 
-The use of new commands should be limited to simple things which will not
-interfere with the production process. For example, \texttt\{\textbackslash
-mycommand\} has been defined in this example, to give italic, mono-spaced text:
+The use of new commands should be limited to simple things which will not interfere with the production process. For example, \texttt{\{mycommand\}} has been defined in this example, to give italic, mono-spaced text:
 \mycommand{some text}.
 \section*{Acknowledgment}
-\label{sec:org8069180}
+\label{sec:orge0f2485}
 
 Please use ``The authors thank \ldots'' rather than ``The authors would like to
 thank \ldots''.
 \section*{Supporting information}
-\label{sec:org85d2a90}
+\label{sec:orgff95759}
 A listing of the contents of each file supplied as Supporting Information
 should be included. For instructions on what should be included in the
 Supporting Information as well as how to prepare this material for
@@ -200,19 +202,19 @@ The following files are available free of charge.
   \item Filename-2: brief description
 \end{itemize}
 
-%\bibliography{references.bib}
+
 \printbibliography
 
 
 \clearpage
 \section*{Entry for the Table of Contents}
-\label{sec:org5859a76}
+\label{sec:org02d887f}
+\singlespacing
 
 \rule{0.05in}{1.75in}%
 \begin{minipage}[b][1.75in]{3.25in}
   \sffamily
   \frenchspacing
-
   Some journals require a graphical entry for the Table of Contents. This
   should be laid out ``print ready'' so that the sizing of the text is correct.
 
