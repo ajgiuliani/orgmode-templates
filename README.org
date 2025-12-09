@@ -51,11 +51,11 @@ Reference formatting is done using biblatex with the biber backend together with
 
 #+end_src
 The =org-latex-pdf-process= settings:
-#+begin_src elisp :exports none 
+#+begin_src elisp
   (setq org-latex-pdf-process
       '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
         "biber %b"
         "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"))  
         #+end_src
-have been placed in the template paper as =elisp= code block. It is a flexible solution, since these settings can be adjusted for every template if necessary.
+have been placed in the template paper as =elisp= code block with =:exports none=. It is a flexible solution, since these settings can be adjusted for every template if necessary.
 The pdf file produced [[https://github.com/ajgiuliani/orgmode-templates/blob/main/ACS-template/paper.pdf][paper.pdf]] is almost identical as the one available from the ACS website.
