@@ -1,0 +1,244 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{article1}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5ce4601588022c38e60ef07ac0267cd5}{%
+           family={Author},
+           familyi={A\bibinitperiod},
+           given={First},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8d695d6e3f15056ab99758cd7cb2bdd3}{%
+           family={Author},
+           familyi={A\bibinitperiod},
+           given={Second},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a669e5954af526794b52bc6d92da56c5}{%
+           family={Author},
+           familyi={A\bibinitperiod},
+           given={Corresponding},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{74e7c701f6e78b5a17d5aad6752bdf1a}
+      \strng{fullhash}{98ea1da9e6aed9579afc525d4d93d6eb}
+      \strng{bibnamehash}{98ea1da9e6aed9579afc525d4d93d6eb}
+      \strng{authorbibnamehash}{98ea1da9e6aed9579afc525d4d93d6eb}
+      \strng{authornamehash}{74e7c701f6e78b5a17d5aad6752bdf1a}
+      \strng{authorfullhash}{98ea1da9e6aed9579afc525d4d93d6eb}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{journaltitle}{ChemSusChem}
+      \field{volume}{1}
+      \field{year}{2008}
+      \field{pages}{9\bibrangedash 14}
+      \range{pages}{6}
+    \endentry
+    \entry{article2}{article}{}
+      \name{author}{4}{}{%
+        {{hash=5ce4601588022c38e60ef07ac0267cd5}{%
+           family={Author},
+           familyi={A\bibinitperiod},
+           given={First},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8d695d6e3f15056ab99758cd7cb2bdd3}{%
+           family={Author},
+           familyi={A\bibinitperiod},
+           given={Second},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c2c4cea42d2bb60576f0d188082e31e5}{%
+           family={Author},
+           familyi={A\bibinitperiod},
+           given={Third},
+           giveni={T\bibinitperiod}}}%
+        {{hash=a669e5954af526794b52bc6d92da56c5}{%
+           family={Author},
+           familyi={A\bibinitperiod},
+           given={Corresponding},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{74e7c701f6e78b5a17d5aad6752bdf1a}
+      \strng{fullhash}{05e3661685e9b044f454638bcce42142}
+      \strng{bibnamehash}{05e3661685e9b044f454638bcce42142}
+      \strng{authorbibnamehash}{05e3661685e9b044f454638bcce42142}
+      \strng{authornamehash}{74e7c701f6e78b5a17d5aad6752bdf1a}
+      \strng{authorfullhash}{05e3661685e9b044f454638bcce42142}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{journaltitle}{Angew. Chem. Int. Ed.}
+      \field{volume}{45}
+      \field{year}{2006}
+      \field{pages}{10\bibrangedash 15}
+      \range{pages}{6}
+    \endentry
+    \entry{book}{book}{}
+      \name{author}{2}{}{%
+        {{hash=bfb6991faecc945ce77425560f232d9d}{%
+           family={Grate},
+           familyi={G\bibinitperiod},
+           given={J.\bibnamedelimi W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=f9df2dd561cee9ec9620c253cb6b05bf}{%
+           family={Frye},
+           familyi={F\bibinitperiod},
+           given={G.\bibnamedelimi C.},
+           giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=bae01fb3475e133ee61a85d6b843efe1}{%
+           family={Baltes},
+           familyi={B\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=9835b00f1956d86d5a6278192de50190}{%
+           family={Göpel},
+           familyi={G\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=9b9e48097fc542ecc1cc86d3b7a1b5bd}{%
+           family={Hesse},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Weinheim}%
+      }
+      \list{publisher}{1}{%
+        {Wiley-VCH}%
+      }
+      \strng{namehash}{6ac7489c6fbc4551a75286704954bb5f}
+      \strng{fullhash}{6ac7489c6fbc4551a75286704954bb5f}
+      \strng{bibnamehash}{6ac7489c6fbc4551a75286704954bb5f}
+      \strng{authorbibnamehash}{6ac7489c6fbc4551a75286704954bb5f}
+      \strng{authornamehash}{6ac7489c6fbc4551a75286704954bb5f}
+      \strng{authorfullhash}{6ac7489c6fbc4551a75286704954bb5f}
+      \strng{editorbibnamehash}{cb7025946945fe5c030ea286530fd41f}
+      \strng{editornamehash}{fc1584b4389f7f46c18297e8db297b50}
+      \strng{editorfullhash}{cb7025946945fe5c030ea286530fd41f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Sensors Update}
+      \field{year}{1996}
+      \field{pages}{10\bibrangedash 20}
+      \range{pages}{11}
+    \endentry
+    \entry{article3}{article}{}
+      \name{author}{4}{}{%
+        {{hash=5ce4601588022c38e60ef07ac0267cd5}{%
+           family={Author},
+           familyi={A\bibinitperiod},
+           given={First},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8d695d6e3f15056ab99758cd7cb2bdd3}{%
+           family={Author},
+           familyi={A\bibinitperiod},
+           given={Second},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c2c4cea42d2bb60576f0d188082e31e5}{%
+           family={Author},
+           familyi={A\bibinitperiod},
+           given={Third},
+           giveni={T\bibinitperiod}}}%
+        {{hash=a669e5954af526794b52bc6d92da56c5}{%
+           family={Author},
+           familyi={A\bibinitperiod},
+           given={Corresponding},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{74e7c701f6e78b5a17d5aad6752bdf1a}
+      \strng{fullhash}{05e3661685e9b044f454638bcce42142}
+      \strng{bibnamehash}{05e3661685e9b044f454638bcce42142}
+      \strng{authorbibnamehash}{05e3661685e9b044f454638bcce42142}
+      \strng{authornamehash}{74e7c701f6e78b5a17d5aad6752bdf1a}
+      \strng{authorfullhash}{05e3661685e9b044f454638bcce42142}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{journaltitle}{Chem. - Eur. J.}
+      \field{volume}{28}
+      \field{year}{2022}
+      \field{pages}{e202200003}
+      \range{pages}{-1}
+    \endentry
+    \entry{WEB}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=5e1e625f1e62def493178896bee4f05d}{%
+           family={Novick},
+           familyi={N\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{5e1e625f1e62def493178896bee4f05d}
+      \strng{fullhash}{5e1e625f1e62def493178896bee4f05d}
+      \strng{bibnamehash}{5e1e625f1e62def493178896bee4f05d}
+      \strng{authorbibnamehash}{5e1e625f1e62def493178896bee4f05d}
+      \strng{authornamehash}{5e1e625f1e62def493178896bee4f05d}
+      \strng{authorfullhash}{5e1e625f1e62def493178896bee4f05d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Biography of Rotational Spectra for Weakly Bound Complexes, can be found under http://www.wesleyan.edu/chem/faculty/novick/vdw.html}
+      \field{year}{2005}
+    \endentry
+    \entry{bookvolume}{inbook}{}
+      \name{author}{2}{}{%
+        {{hash=639d6d70f3b52e3de3ed132885b0ca55}{%
+           family={Koch},
+           familyi={K\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=6077e4700bbc509caa567a460d994693}{%
+           family={Holthausen},
+           familyi={H\bibinitperiod},
+           given={M.\bibnamedelimi C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Weinheim}%
+      }
+      \list{publisher}{1}{%
+        {(Eds.: W. E. Willen, R. J. Larsen), Academic Press}%
+      }
+      \strng{namehash}{8ace936c606d470974e4eb4ca8fec10c}
+      \strng{fullhash}{8ace936c606d470974e4eb4ca8fec10c}
+      \strng{bibnamehash}{8ace936c606d470974e4eb4ca8fec10c}
+      \strng{authorbibnamehash}{8ace936c606d470974e4eb4ca8fec10c}
+      \strng{authornamehash}{8ace936c606d470974e4eb4ca8fec10c}
+      \strng{authorfullhash}{8ace936c606d470974e4eb4ca8fec10c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Chemist's Guide to Density Functional Theory, Vol. 1}
+      \field{year}{2000}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
