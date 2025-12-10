@@ -1,7 +1,7 @@
 #+Title: acs-orgmode-template
 #+LATEX_CLASS: ACS-article
 #+LANG: en
-#+OPTIONS: toc:nil date:nil author:t H:4 num:2 Tex:t LaTex:t title:nil
+#+OPTIONS: toc:nil date:nil author:nil H:4 num:2 Tex:t LaTex:t title:nil
 #+OPTIONS: tags:nil timestamp:t todo:nil stat:t num:nil
 #+OPTIONS: tex:t
 #+EXPORT_EXCLUDE_TAGS: noexport
